@@ -15,7 +15,7 @@ scanBtn.addEventListener('click', () => {
   });
   Instascan.Camera.getCameras().then(function (cameras) {
     if (cameras.length > 0) {
-      scanner.start(cameras[1]);
+      scanner.start(cameras[0]);
     } else {
       alert("No camera found")
     }
